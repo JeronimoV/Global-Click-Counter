@@ -10,7 +10,7 @@ const Counter = () => {
     const [actualSocket, setActualSocket] = useState(null)
 
     const getClicks = async() => {
-        await fetch("http://localhost:3001").then(response => response.json()).then(response => setActualClicks(response[0].amount))
+        await fetch("https://global-click-counter-production.up.railway.app").then(response => response.json()).then(response => setActualClicks(response[0].amount))
     }
 
     useEffect(() => {
@@ -18,7 +18,7 @@ const Counter = () => {
     }, [])
 
     useEffect(() => {
-        const socket = io("http://localhost:3001")
+        const socket = io("https://global-click-counter-production.up.railway.app")
         setActualSocket(socket)
         socket.on("newClick", (event) => {
             setActualClicks(event.amount)
