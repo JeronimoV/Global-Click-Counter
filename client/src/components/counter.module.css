@@ -32,8 +32,21 @@
     transition: 0.2s;
     margin: auto;
     margin-top: 1vw;
+    font-size: 1vw;
 }
 
 .container button:active{
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 900px) {
+    .container button {
+        height: 8vw;
+        width: 30vw;
+        font-size: 5vw;
+    }
+    .clickAmount{
+        min-height: 40vw;
+        min-width: 50vw;
+    }
+  }
