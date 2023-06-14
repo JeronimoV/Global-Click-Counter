@@ -5,7 +5,7 @@ require("dotenv").config();
 const { USER, PASSWORD, HOST, PORT } = process.env;
 
 const sequelize = new Sequelize(
-  `postgresql://postgres:jSwBNeJcAG3i4MwsIUu7@containers-us-west-190.railway.app:5800/railway`
+  `postgresql://postgres:jSwBNeJcAG3i4MwsIUu7@containers-us-west-190.railway.app:${PORT}/railway`
 );
 
 const modelList = [];

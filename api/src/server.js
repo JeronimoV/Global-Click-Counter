@@ -4,13 +4,15 @@ const server = express();
 const cors = require("cors");
 const routes = require("./routes/index");
 const { Click } = require("./database");
+require("dotenv").config();
+const { PORT } = process.env;
 
 server.use(express.json());
 server.use(cors());
 server.use("/", routes);
 
 conn.sync({ force: false }).then(() => {
-  const actualServer = server.listen(3001, () => {
+  const actualServer = server.listen(PORT, () => {
     console.log("Server Started");
   });
   const io = require("socket.io")(actualServer, {
