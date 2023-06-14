@@ -1,0 +1,39 @@
+.clickAmount{
+    background-color: #FF3232;
+    height: fit-content;
+    width: fit-content;
+    min-width: 40vw;
+    min-height: 8vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clickAmount h3{
+    font-size: 9vw;
+    color: white;
+    margin: 0;
+}
+
+.container button{
+    height: 2vw;
+    width: 8vw;
+    border: none;
+    border-radius: 0.2vw;
+    font-weight: bolder;
+    background-color: white;
+    color: #FF3232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: auto;
+    margin-top: 1vw;
+}
+
+.container button:active{
+    transform: scale(1.2);
+}

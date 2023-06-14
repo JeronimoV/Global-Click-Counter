@@ -1,0 +1,22 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: #1A1A1A;
+}
+
+.container h1{
+    font-size: 4vw;
+    margin: 0;
+}
+
+.title{
+    margin: 1vw;
+    margin-top: 0;
+    font-size: 2vw;
+}
